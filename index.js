@@ -27,6 +27,6 @@ app.post('/translate', async (req, res) => {
   }, 2000);
 })
 
-app.listen(3232, () => {
+app.listen(80, () => {
   console.log('Acesse em http://localhost:3232');
 })
