@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: true }));
 app.post('/translate', async (req, res) => {
   const browser = await puppeteer.launch({ headless: true });
   const page = await browser.newPage();
-  await page.goto('https://translate.google.com');
+  await page.goto('https://translate.google.com.br/?hl=pt-BR');
   
   await page.type('textarea[jsname=BJE2fc]', req.body.word, { delay: 10 });
   setTimeout(async () => {
